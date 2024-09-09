@@ -1,0 +1,11 @@
+erm yes, the stuff I learnt from online tutorial and small projects, I made this txt file for myself, don't judge me:
+
+x % y returns the remainder
+x & y compares each binary bit => both 1 = 1, else = 0
+x | y compares each binary bit => 1 "1" = 1, else = 0
+x ^ y compares each binary bit => difference? = 1, else = 0
+x << y || x >> y shifts the bits to the left/ right by y positions
+
+buffer clearing:
+int c; while ((c = getchar()) != '\n' && c != EOF) {}
+
