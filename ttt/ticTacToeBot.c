@@ -51,7 +51,7 @@ void handle() {
                 player[sizeof(player[0]) / sizeof(player[0][0])] = i;
                 printf("\n%s\nIt's now the bot's turn.\n\n", board);
                 // bot part
-
+                // soon
                 break;
             }
         }
