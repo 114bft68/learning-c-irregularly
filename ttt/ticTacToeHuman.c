@@ -26,9 +26,7 @@ void boardStuff() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF) {} // buffer clearing thing, I don't really know what it is but I'll learn about that later
     
-    if (input == '1' || input == '2' || input == '3' ||
-        input == '4' || input == '5' || input == '6' ||
-        input == '7' || input == '8' || input == '9') { // I want regex
+    if (input > '0' && input <= '9') { // I want regex
         if (turn) {
             players[1][indices[1]++] = input;
         } else {
