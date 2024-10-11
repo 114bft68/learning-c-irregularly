@@ -9,5 +9,5 @@ x << y || x >> y shifts the bits to the left/ right by y positions
 buffer clearing:
 int c; while ((c = getchar()) != '\n' && c != EOF) {}
 
-~~currently trying to understand pointers stuff~~ (I can't)\
-learning
+currently trying to understand pointers stuff (I can't)
+learning c functions
