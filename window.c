@@ -45,10 +45,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
         return 0;
     }
 
-    HWND hwnd;
-
-    hwnd = CreateWindowExW(
-        WS_EX_CLIENTEDGE,
+    HWND hwnd = CreateWindowExW(
+        0,
         CLASS_NAME,
         L"An Ordinary Window",
         WS_OVERLAPPEDWINDOW,
