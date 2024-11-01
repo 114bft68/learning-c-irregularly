@@ -4,20 +4,7 @@
 
 const wchar_t CLASS_NAME[] = L"MyWindow";
 
-LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
-    switch (uMsg) {
-        case WM_CLOSE:
-            DestroyWindow(hwnd);
-            break;
-
-        case WM_DESTROY:
-            PostQuitMessage(0);
-            break;
-
-        default:
-            DefWindowProc(hwnd, uMsg, wParam, lParam);
-    }
-}
+LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
     WNDCLASSEXW wc = {};
@@ -77,5 +64,20 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     while (GetMessage(&msg, NULL, 0, 0) > 0) {
         TranslateMessage(&msg);
         DispatchMessage(&msg);
+    }
+}
+
+LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
+    switch (uMsg) {
+        case WM_CLOSE:
+            DestroyWindow(hwnd);
+            break;
+
+        case WM_DESTROY:
+            PostQuitMessage(0);
+            break;
+
+        default:
+            return DefWindowProc(hwnd, uMsg, wParam, lParam);
     }
 }
