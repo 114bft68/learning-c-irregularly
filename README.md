@@ -1,2 +1,2 @@
-# learning-c
-#include &lt;stdbool.h><br>bool simple = true;<br>bool basic = true;
+made quite a lot of mistakes here...\
+doesn't matter, I'll get better
