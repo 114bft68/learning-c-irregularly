@@ -26,7 +26,7 @@ int main() {
         
         } else {
 
-            printf("The number is %s than your previous guess", number > input ? "higher" : "lower ");
+            printf("The number is %s than your previous guess", number > input ? "higher" : "lower "); // the space behind "lower" aligns the lengths of strings
         
         }
     }
